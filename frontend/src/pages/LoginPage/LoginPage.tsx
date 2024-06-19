@@ -2,9 +2,7 @@ import { ChangeEvent, FormEvent, useState } from "react";
 import { Input } from "src/components/input/Input";
 import "./LoginPage.css";
 import { LOCAL_STORAGE_TOKEN } from "src/components/consts/localStarage";
-import { Navigate, useNavigate } from "react-router-dom";
 import { axiosRequest } from "src/components/api";
-
 export interface AuthStateUserData {
   login: string;
   password: string;
@@ -15,6 +13,10 @@ const LoginPage = () => {
     login: "",
     password: "",
   });
+  const [showPassword, setShowPassword] = useState(false);
+  const toogleShowPassword = () => {
+    setShowPassword(!showPassword);
+  };
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setLoginData({ ...loginData, [e.target.name]: e.target.value });
   };
@@ -46,9 +48,12 @@ const LoginPage = () => {
           <Input
             name="password"
             value={loginData.password}
-            type="password"
+            type={showPassword ? "text" : "password"}
             onChange={handleChange}
             placeholder="password"
+            icon={true}
+            isShowPassword={showPassword}
+            ToggleShowPassword={toogleShowPassword}
           />
         </div>
         <button className="button" type="submit">

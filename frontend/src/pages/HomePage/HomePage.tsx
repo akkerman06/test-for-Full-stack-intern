@@ -11,8 +11,6 @@ export const HomePage = () => {
       updatedClients[index].status = value;
       setDataClients(updatedClients);
       const data = await axiosRequest.patch(
-        //@ts-ignore
-
         `/changeStatus/${updatedClients[index]._id}`,
         {
           status: value,

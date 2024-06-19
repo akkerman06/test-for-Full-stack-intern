@@ -7,4 +7,5 @@ export interface Client {
   inn: string;
   status: string;
   fullnameUser: string;
+  _id: string;
 }
