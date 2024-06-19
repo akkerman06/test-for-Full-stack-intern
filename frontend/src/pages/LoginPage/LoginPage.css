@@ -1,0 +1,35 @@
+.loginPage {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+}
+
+.loginPage_form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.loginPage_inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container {
+  max-width: 1000px;
+  background-color: aliceblue;
+}
+
+.button {
+  width: 100%;
+  background-color: rgb(112, 91, 213);
+  font-weight: 700;
+  color: white;
+  border-radius: 3px;
+  border: 0px;
+  padding: 10px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: rgb(103, 81, 212);
+}
