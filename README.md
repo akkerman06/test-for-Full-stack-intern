@@ -33,7 +33,7 @@
   - [DataJson](#DataJson)
 
 ## Скриншоты
-![image](https://github.com/akkerman06/test-for-Full-stack-intern/assets/138283291/1de2194a-9b03-4492-9bb8-3bebca52ff81)
+![image](https://github.com/akkerman06/test-for-Full-stack-intern/assets/138283291/caa38020-c1d0-4795-b267-7f57b320839b)
 ![image](https://github.com/akkerman06/test-for-Full-stack-intern/assets/138283291/c50e666b-1316-4516-808e-134771576a3d)
 
 ## Стек задания
@@ -44,6 +44,7 @@
 -Mongodb
 
 ## Примечание
+-Вход для пользователя: login: admin , password: admin
 -В репозиторие в .env есть ссылка на бд Mongodb, для тестирования нужно установить зависимости frontend,backend папок и  запустить с помощью npm start для каждой папки(fronend,backend)
 
 ## DataJson (данные которые есть в Базе данных)
